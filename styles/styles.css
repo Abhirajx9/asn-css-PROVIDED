@@ -130,7 +130,6 @@ h1, h2 {
 
 /*** INSERT YOUR WORK BELOW: ***/
 
-/* GENERAL */
 
 .flex {
   display: flex;
@@ -150,7 +149,6 @@ img {
   height: auto;
 }
 
-/* HEADER */
 
 header {
   background-color: #c74365;
@@ -194,7 +192,6 @@ header a:hover {
   text-decoration: underline;
 }
 
-/* MAIN */
 
 main h2 {
   margin-top: 30px;
@@ -219,7 +216,6 @@ article h3 {
   margin-bottom: 15px;
 }
 
-/* FOOTER */
 
 footer {
   background-color: #c74365;
@@ -319,13 +315,13 @@ main button:hover {
   background-color: grey;
 }
 
-/* ========================= */
-/* 📱 MOBILE RESPONSIVE FIX */
-/* ========================= */
+
+/*MOBILE*/
+
 
 @media (max-width: 768px) {
 
-  /* Header stack */
+
   header .fixed-width {
     flex-direction: column;
     text-align: center;
@@ -341,12 +337,12 @@ main button:hover {
     gap: 10px;
   }
 
-  /* Articles stack */
+
   article {
     flex-direction: column;
   }
 
-  /* Layout stack */
+
   .flex {
     flex-direction: column;
     align-items: center;
@@ -357,7 +353,7 @@ main button:hover {
     width: 100%;
   }
 
-  /* Images */
+
   main img {
     width: 100%;
     max-width: 200px;
@@ -365,13 +361,13 @@ main button:hover {
     display: block;
   }
 
-  /* Labels */
+
   .labels p {
     width: auto;
     text-align: left;
   }
 
-  /* Timesheet fix */
+
   main .flex {
     flex-direction: column;
     align-items: flex-start;
@@ -385,13 +381,13 @@ main button:hover {
     width: 100%;
   }
 
-  /* Button full width */
+
   main button {
     width: 100%;
     margin-left: 0;
   }
 
-  /* Text resize */
+
   header h1 {
     font-size: 24px;
   }
