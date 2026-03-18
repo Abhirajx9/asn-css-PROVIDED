@@ -1,4 +1,4 @@
-/****************** YOUR NAME: 
+/****************** YOUR NAME: Abhiraj Panesar
 
 Some starter CSS has been provided. You are discouraged from modifying the starter CSS.
 
@@ -46,13 +46,21 @@ h1, h2 {
 
 /*** INSERT YOUR WORK BELOW: ***/
 
+h1 {
+    font-size: 32px;
+    font-family: 'Roboto Slab', serif;
+}
 
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+}
 
-
-
-
-
-
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 
 /****************** site-wide styling ******************/
@@ -70,14 +78,88 @@ h1, h2 {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
+header {
+    background-color: #c74365;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+}
 
+header .fixed-width {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+}
 
+header h1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
 
+header img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    padding: 10px;
+}
 
+header nav {
+    margin-left: auto;
+}
 
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
 
+header nav a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.narrow-column h2 {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+footer {
+    background-color: #c74365;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer .fixed-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+footer a {
+    display: inline-block;
+}
 
 /****************** home page styling ******************/
 
@@ -88,12 +170,16 @@ h1, h2 {
 
 /*** INSERT YOUR WORK BELOW: ***/
 
+.italics {
+    font-style: italic;
+    margin-bottom: 15px;
+}
 
-
-
-
-
-
+article {
+    background-color: lightgrey;
+    padding: 15px;
+    margin: 15px;
+}
 
 /****************** profile page styling ******************/
 
@@ -109,10 +195,42 @@ h1, h2 {
 
 /*** INSERT YOUR WORK BELOW: ***/
 
+main img{
+    width: 140px;
+    margin: 15px 15px 0 0;
+}
+
+.wide-column {
+    width: 420px;
+}
+
+.narrow-column {
+    width: 180px;
+}
+
+.labels p{
+    width: 80px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 15px;
+}
+
+p{
+    margin-bottom: 10px;
+}
 
 
+.light-background{
+    background-color: lightgray;
+    height: 140px;
+    margin-top: 30px;
+}
 
-
+.narrow-column h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 
 /****************** form styling ******************/
 
@@ -129,272 +247,40 @@ h1, h2 {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
-
-
-.flex {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.fixed-width {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-header {
-  background-color: #c74365;
-  padding: 10px;
-}
-
-header h1 {
-  font-size: 32px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-header .fixed-width img {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-  padding: 5px;
-}
-
-header nav {
-  margin-left: auto;
-}
-
-header nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-}
-
-header nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-
-main h2 {
-  margin-top: 30px;
-  font-size: 24px;
-}
-
-article {
-  border: 15px solid lightgrey;
-  background-color: lightgrey;
-  margin: 15px 0;
-  display: flex;
-  gap: 15px;
-}
-
-article h3 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.italics {
-  font-style: italic;
-  margin-bottom: 15px;
-}
-
-
-footer {
-  background-color: #c74365;
-  padding: 10px;
-  margin-top: 30px;
-  text-align: center;
-}
-
-footer p {
-  margin: 10px;
-  font-size: 12px;
-}
-
-footer a {
-  margin: 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* PROFILE PAGE */
-
-main img {
-  width: 140px;
-  margin: 15px 15px 0 0;
-}
-
-.wide-column {
-  flex: 2;
-}
-
-.narrow-column {
-  flex: 1;
-}
-
-.labels p {
-  width: 80px;
-  font-weight: bold;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-.light-background {
-  background-color: lightgray;
-  border: 12px solid lightgray;
-}
-
-.narrow-column h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-/* TIMESHEET */
-
-main .flex {
-  flex-direction: row;
-  gap: 15px;
-}
-
-main .flex label {
-  display: flex;
-  gap: 15px;
-  font-weight: bold;
-  justify-content: center;
-}
-
-main .timesheet-content input {
-  width: 100px;
-  height: 21px;
-  font-family: inherit;
-}
-
 form {
-  margin: 45px 0;
+    padding: 45px 0;
 }
 
-main button {
-  width: 100px;
-  height: 30px;
-  margin-top: 30px;
-  margin-left: auto;
-  border: 1px solid grey;
-  border-radius: 4px;
-  background-color: white;
-  font-family: inherit;
-  cursor: pointer;
-}
-
-main button:hover {
-  background-color: grey;
-}
-
-
-/*MOBILE*/
-
-
-@media (max-width: 768px) {
-
-
-  header .fixed-width {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header nav {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-
-  article {
-    flex-direction: column;
-  }
-
-
-  .flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .wide-column,
-  .narrow-column {
-    width: 100%;
-  }
-
-
-  main img {
-    width: 100%;
-    max-width: 200px;
-    margin: 10px auto;
+form label {
     display: block;
-  }
-
-
-  .labels p {
-    width: auto;
-    text-align: left;
-  }
-
-
-  main .flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  main .flex label {
-    justify-content: flex-start;
-  }
-
-  main .timesheet-content input {
-    width: 100%;
-  }
-
-
-  main button {
-    width: 100%;
-    margin-left: 0;
-  }
-
-
-  header h1 {
-    font-size: 24px;
-  }
-
-  main h2,
-  .narrow-column h2 {
-    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-  }
+}
+
+form input {
+    width: 100px;
+}
+
+form div {
+    gap: 15px;
+}
+
+.timesheet-content p {
+    margin-top: 15px;
+}
+
+button {
+    height: 21px;
+    width: 107px;
+    margin-top: 30px;
+    margin-left: 490px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: grey;
 }

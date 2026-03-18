@@ -1,0 +1,184 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-width {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/****************** site-wide styling ******************/
+
+header {
+  background-color: #c74365;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+header .fixed-width img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  line-height: 50px;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #c74365;
+  margin-top: 30px;
+  padding: 15px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+footer a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/****************** typography ******************/
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/****************** home page styling ******************/
+
+.italics {
+  font-style: italic;
+}
+
+article {
+  background-color: lightgray;
+  padding: 15px;
+  margin: 15px;
+}
+
+/****************** profile page styling ******************/
+
+main img {
+  width: 120px;
+  margin: 15px 15px 0 0;
+}
+
+.wide-column {
+  width: 420px;
+}
+
+.narrow-column {
+  width: 180px;
+}
+
+.labels {
+  width: 70px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.light-background {
+  background-color: lightgray;
+  height: 140px;
+  margin-top: 30px;
+}
+
+.light-background h2 {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+/****************** form styling ******************/
+
+form {
+  margin: 45px 0;
+}
+
+main .flex {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+input {
+  width: 100px;
+  height: 21px;
+  font-family: inherit;
+}
+
+button {
+  width: 100px;
+  height: 21px;
+  margin-top: 30px;
+  margin-left: 800px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: grey;
+}
